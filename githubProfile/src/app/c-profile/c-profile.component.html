@@ -1,0 +1,88 @@
+<p>
+    c-profile works!
+</p>
+<div class="row">
+    <h2>
+        {{propGithubApiResObject.name}}
+    </h2>
+
+    <div class="col-md-4">
+        <p> : {{propGithubApiResObject.bio}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.blog}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.company}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.crated_at}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.email}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.events_url}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.followers}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.followers_url}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.following}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.following_url}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.gists_url}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.gravatar_id}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.hireable}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.html_url}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.id}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.location}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.login}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.organizations_url}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.public_gists}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.public_repos}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.recieved_events_url}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.repos_url}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.site_admin}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.starred_url}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.subscriptions_url}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.type}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.updated_at}} </p><br>
+        <br>
+        <p> : {{propGithubApiResObject.url}} </p><br>
+    </div>
+
+    <div class="col-md-1">
+
+        <img src="{{propGithubApiResObject.avatar_url}}<br>" alt="">
+    </div>
+</div>
+<div class="row">
+    <div *ngFor='let repo of propGithubApiResObject_repos'>
+        <div class="col-md-4">
+
+            archive_url : <br>{{repo.full_name}}<br> assignees_url : <br>{{repo.full_name}}<br> blobs_url : <br>{{repo.full_name}}<br> branches_url : <br>{{repo.full_name}}<br> clone_url : <br>{{repo.full_name}}<br> collaborators_url : <br>{{repo.full_name}}<br>            comments_url : <br>{{repo.full_name}}<br> commits_url :
+            <br>{{repo.full_name}}<br> compare_url : <br>{{repo.full_name}}<br> contents_url : <br>{{repo.full_name}}<br> contributors_url : <br>{{repo.full_name}}<br> created_at : <br>{{repo.full_name}}<br> default_branch : <br>{{repo.full_name}}<br>            deployments_url : <br>{{repo.full_name}}<br> description : <br>{{repo.full_name}}<br> downloads_url : <br>{{repo.full_name}}<br> events_url : <br>{{repo.full_name}}<br> fork : <br>{{repo.full_name}}<br> forks : <br>{{repo.full_name}}<br> forks_count
+            : <br>{{repo.full_name}}<br> forks_url : <br>{{repo.full_name}}<br> full_name : <br>{{repo.full_name}}<br> git_commits_url : <br>{{repo.full_name}}<br> git_refs_url : <br>{{repo.full_name}}<br> git_tags_url : <br>{{repo.full_name}}<br> git_url
+            : <br>{{repo.full_name}}<br> has_downloads : <br>{{repo.full_name}}<br> has_issues : <br>{{repo.full_name}}<br> has_pages : <br>{{repo.full_name}}<br> has_wiki : <br>{{repo.full_name}}<br> homepage : <br>{{repo.full_name}}<br> hooks_url :
+            <br>{{repo.full_name}}<br> html_url : <br>{{repo.full_name}}<br> id : <br>{{repo.full_name}}<br> issue_comment_url : <br>{{repo.full_name}}<br> issue_events_url : <br>{{repo.full_name}}<br> issues_url : <br>{{repo.full_name}}<br> keys_url
+            : <br>{{repo.full_name}}<br> labels_url : <br>{{repo.full_name}}<br> language : <br>{{repo.full_name}}<br> languages_url : <br>{{repo.full_name}}<br> merges_url : <br>{{repo.full_name}}<br> milestones_url : <br>{{repo.full_name}}<br> mirror_url
+            : <br>{{repo.full_name}}<br> name : <br>{{repo.full_name}}<br> notifications_url : <br>{{repo.full_name}}<br> open_issues : <br>{{repo.full_name}}<br> open_issues_count : <br>{{repo.full_name}}<br> owner : <br>{{repo.full_name}}<br> private
+            : <br>{{repo.full_name}}<br> pulls_url : <br>{{repo.full_name}}<br> pushed_at : <br>{{repo.full_name}}<br> releases_url : <br>{{repo.full_name}}<br> size : <br>{{repo.full_name}}<br> ssh_url : <br>{{repo.full_name}}<br> stargazers_count :
+            <br>{{repo.full_name}}<br> stargazers_url : <br>{{repo.full_name}}<br> statuses_url : <br>{{repo.full_name}}<br> subscribers_url : <br>{{repo.full_name}}<br> subscription_url : <br>{{repo.full_name}}<br> svn_url : <br>{{repo.full_name}}<br>            tags_url : <br>{{repo.full_name}}<br> teams_url :
+            <br>{{repo.full_name}}<br> trees_url : <br>{{repo.full_name}}<br> updated_at : <br>{{repo.full_name}}<br> url : <br>{{repo.full_name}}<br> watchers : <br>{{repo.full_name}}<br> watchers_count : <br>{{repo.full_name}}<br>
+        </div>
+    </div>
+</div>
